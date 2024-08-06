@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contener">
+      <div class="calculatorTop">
+        <div class="boxinput">
+          <input type="date" name="date" id="date" mxn="01-01-2025"  />
+          <button onclick="AgeCalculate()">Calculator</button>
+        </div>
+      </div>
+      <div class="calculatorBottom">
+        <div class="boxdate">
+          <div class="cards">
+            <h2 id="showyear">00</h2>
+            <p>Year</p>
+          </div>
+          <div class="cards">
+            <h2 id="showmonth">00</h2>
+            <p>Month</p>
+          </div>
+          <div class="cards">
+            <h2 id="showday">00</h2>
+            <p>Day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
