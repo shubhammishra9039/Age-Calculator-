@@ -24,8 +24,27 @@ body {
   height: 50%;
   /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
-  align-items: end;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.calculatorTop .title
+{
+  width: 50%;
+  height: 30%;
+ /* border: 2px solid red; */
+ display: flex;
+ align-items: end;
+ justify-content: center;
+}
+.calculatorTop .title h1
+{
+  font-family: "Prata", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: .5px 1px 2px whitesmoke;
 }
 .calculatorTop .boxinput {
   width: 35%;
@@ -113,6 +132,7 @@ body {
 }
 @media screen and (max-width: 900px)
 {
+
     .calculatorTop .boxinput {
         display: flex;
         flex-direction: column;
@@ -124,6 +144,15 @@ body {
 
 
 @media screen and (max-width: 600px) {
+  .calculatorTop .title
+  {
+    width: 50%;
+    height: 30%;
+  }
+  .calculatorTop .title h1
+  {
+    font-size: 14px;
+  }
   .calculatorTop .boxinput {
     display: flex;
     flex-direction: column;
